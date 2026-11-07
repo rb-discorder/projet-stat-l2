@@ -208,6 +208,7 @@ tempCodeRunnerFile.py
 # Ruff stuff:
 .ruff_cache/
 
+
 # PyPI configuration file
 .pypirc
 
@@ -223,3 +224,19 @@ history_toulouse_train.parquet
 Defi_Velos.zip
 Defi_Velos.zip
 history_toulouse_train.parquet
+
+
+# Données lourdes (évite le blocage des 100 Mo sur GitHub)
+*.parquet
+data/
+
+# Artefacts Windows et Mac
+*Zone.Identifier*
+__MACOSX/
+.DS_Store
+Thumbs.db
+
+# Caches
+*.zip
+.ipynb_checkpoints/
+__pycache__/
